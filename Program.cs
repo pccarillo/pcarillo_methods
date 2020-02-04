@@ -22,10 +22,11 @@ namespace pcarillo_methods
                 Console.WriteLine("There was an error. Please, try again. ");
             }
         }
+        // create method
         private static string HelloName()
         {
-            string name = Console.ReadLine();
-            return name;
+            string name = Console.ReadLine(); // collect user input
+            return name; // return input
         }
     }
 }
