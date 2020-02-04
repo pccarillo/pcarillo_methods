@@ -6,9 +6,26 @@ namespace pcarillo_methods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi, what's your name?"); // display message asking for name
-            string name = Console.ReadLine(); // collect user input and store it inside the variable name
-            Console.WriteLine("Hello " + name + "!"); // print strings along with variable name
+            // try catch to handle errors
+            try
+            {
+                // get user input
+                Console.WriteLine("Please enter your name:");
+                string name = HelloName();
+
+                // show message to user input
+                Console.WriteLine("Hello " + name + "!");
+
+            }
+            catch
+            {   // show message in case there is an error
+                Console.WriteLine("There was an error. Please, try again. ");
+            }
+        }
+        private static string HelloName()
+        {
+            string name = Console.ReadLine();
+            return name;
         }
     }
 }
