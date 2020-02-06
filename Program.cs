@@ -6,21 +6,9 @@ namespace pcarillo_methods
     {
         static void Main(string[] args)
         {
-            // try catch to handle errors
-            try
-            {
-                // get user input
-                Console.WriteLine("Please enter your name:");
-                string name = HelloName();
-
-                // show message to user input
-                Console.WriteLine("Hello " + name + "!");
-
-            }
-            catch
-            {   // show message in case there is an error
-                Console.WriteLine("There was an error. Please, try again. ");
-            }
+            Console.WriteLine("Please enter your name:"); // get user input
+            string name = HelloName(); // call method and save it in a variable
+            Console.WriteLine("Hello " + name + "!"); // show message to user input
         }
         // create method
         private static string HelloName()
